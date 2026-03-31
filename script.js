@@ -17,9 +17,7 @@ function updateClock() {
   minutes = minutes < 10 ? "0" + minutes : minutes;
   seconds = seconds < 10 ? "0" + seconds : seconds;
 
-  const colon = seconds % 2 === 0 ? ":" : " ";
-
-  timeElement.textContent = `${hours}${colon}${minutes}${colon}${seconds}`;
+  timeElement.textContent = `${hours} : ${minutes} : ${seconds}`;
   ampmElement.textContent = ampm;
 
   const options = {
