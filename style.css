@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #41e1c1;
+  text-shadow: 0 0 20px #41e1c1, 0 0 60px #41e1c1;
+}
+
+/* Clock box */
+#clock {
+  font-size: 4rem;
+  padding: 20px 40px;
+  border: 2px solid #41e1c1;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: 0 0 20px #41e1c1, 0 0 60px #41e1c1;
+}
+
+/* Blinking colon effect */
+.blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* AM/PM */
+#ampm {
+  font-size: 1.5rem;
+  margin-left: 10px;
+  color: #41e1c1;
+}
+
+/* Date */
+#date {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  color: #41e1c1;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  #clock {
+    font-size: 2rem;
+    padding: 15px 20px;
+  }
+  #date {
+    font-size: 1.2rem;
+  }
+}
